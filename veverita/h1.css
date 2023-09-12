@@ -1,0 +1,26 @@
+
+  h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 30px;
+    color: black;
+    padding: 2rem clamp(2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+  }
+  
+ 
+  h1:hover {
+    
+    background: rgba(9, 9, 9, 0)
+    
+    
+  }
+
+
+
+p {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+
+}
+
+

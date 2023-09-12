@@ -1,0 +1,117 @@
+
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    line-height: 1.6;
+    background: rgb	(40,43,48);
+}
+
+.card {
+    color: rgb(0, 0, 0);
+    background-image: url(imagini_veverite/sqn.png);
+    background-size: cover;
+    border-radius: .7rem;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+   
+}
+.card-content {
+    
+    --padding: 1.5em;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 30%,
+        hsl(0 0% 0% / 1)
+    );
+    position: relative;
+    top: 240px;
+    
+
+
+}
+
+  
+
+
+.card-title {
+    position: relative;
+    width: max-content ;
+}
+
+.card-title::after {
+    
+    
+    left: calc(var(--padding) * -1);
+    bottom: 0;
+    content: '';
+    height: 2px;
+    width: calc(100% + var(--padding));
+    
+    background: black;
+
+
+}
+
+/* descriierea la veveritra*/
+.card-description {
+
+    color: purple;
+    
+}
+
+
+
+
+
+
+
+
+
+/* CSS */
+.button-89 {
+  --b: 2px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #060606;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: relative;
+  left: 260px;
+  bottom: 60px;
+  cursor: pointer;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: black;
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #030303;
+}
